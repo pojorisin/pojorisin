@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <script type="text/javascript">
+      function processiFrameTextInput()
+      {
+          document.getElementById("iFrameTextFieldTestOutputControlID").value=document.getElementById("iFrameTextFieldTestInputControlID").value;
+      }
+     </script>  
+    <title>webdriver unit test iframe page title</title>
+  </head>
+  <body>
+    <form id="webDriverUnitiFrameTestFormID" name="webDriverUnitiFrameTestFormName">
+    <h1>UI Automation Selenium WebDriver Unit Test Page iFrame</h1>
+    <hr />
+      <table width="800">
+        <tr>
+          <td>
+            <p id="iFrameTextFieldTestDescriptionTextID" name="iFrameTextFieldTestDescriptionTextName"><b>iFrame Text Field Input Control Test</b></p>
+          </td>
+          <td>
+            <table width="300">
+              <tr>
+                <td>
+                  <p id="iFrameTextFieldTestInputTextID" name="iFrameTextFieldTestInputTextName">iFrame Text Field Test Input</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="text" id="iFrameTextFieldTestInputControlID"  name="iFrameTextFieldTestInputControlName" size="50" maxlength="50" value="" class="inputField">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button type="button" id="iFrameTextFieldTestProcessButtonID" name="iFrameTextFieldTestProcessButtonName" onclick="processiFrameTextInput()">Process</button>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td>
+            <table>
+              <tr>
+                <td>
+                  <p id="iFrameTextFieldTestOutputTextID" name="iFrameTextFieldTestOutputTextName">iFrame Text Field Test Output</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="text" id="iFrameTextFieldTestOutputControlID"  name="iFrameTextFieldTestOutputControlName" size="50" maxlength="50" class="inputField">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <br>
+                </td>
+               </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
